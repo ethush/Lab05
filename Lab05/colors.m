@@ -41,7 +41,7 @@ NSTimer *timer;
     intRed = self.slRed.value;
     
     
-    self.lblColors.text = [NSString stringWithFormat:@"%ld", (long)intRed];
+   // self.lblColors.text = [NSString stringWithFormat:@"%ld", (long)intRed];
     
     self.lblColors.backgroundColor = [UIColor colorWithRed:(intRed/255.0) green:(intGreen/255.0) blue:(intBlue/255.0) alpha:1.0f];
     
@@ -55,7 +55,7 @@ NSTimer *timer;
     intGreen = self.slGreen.value;
     
     
-    self.lblColors.text = [NSString stringWithFormat:@"%ld", (long)intGreen];
+  //  self.lblColors.text = [NSString stringWithFormat:@"%ld", (long)intGreen];
     
     self.lblColors.backgroundColor = [UIColor colorWithRed:(intRed/255.0) green:(intGreen/255.0) blue:(intBlue/255.0) alpha:1.0f];}
 
@@ -66,7 +66,7 @@ NSTimer *timer;
     intBlue = self.slBlue.value;
     
     
-    self.lblColors.text = [NSString stringWithFormat:@"%ld", (long)intBlue];
+   // self.lblColors.text = [NSString stringWithFormat:@"%ld", (long)intBlue];
     
     self.lblColors.backgroundColor = [UIColor colorWithRed:(intRed/255.0) green:(intGreen/255.0) blue:(intBlue/255.0) alpha:1.0f];
 }
@@ -75,7 +75,7 @@ NSTimer *timer;
        self.lblColors.alpha = 0;
     [UIView animateWithDuration: 1 delay:0.5 options:UIViewAnimationOptionRepeat | UIViewAnimationOptionAutoreverse animations:^{self.lblColors.alpha = 1;} completion: nil];
     valorsl = self.slBlink.value;
-    self.lblColors.text = [NSString stringWithFormat:@"%ld", (long)valorsl];
+   // self.lblColors.text = [NSString stringWithFormat:@"%ld", (long)valorsl];
     
     [timer invalidate];
     contador = 0;
